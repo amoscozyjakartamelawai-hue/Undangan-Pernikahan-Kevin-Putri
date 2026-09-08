@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0d0906">
-  <meta name="description" content="Undangan Pernikahan Adat Jawa Digital Kevin & Eka">
-  <title>Kevin & Eka — Pahargyan Pawiwahan Keraton Jawa</title>
+  <meta name="description" content="Undangan Digital Pernikahan Kevin & Putri">
+  <title>Kevin & Putri</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -554,43 +554,109 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
-  </style>
+  
+    /* REAL JAVA CINEMATIC OPENING — 12 SECONDS */
+    .opening.real-java-opening{background:#070503;isolation:isolate;}
+    .opening.real-java-opening::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 48%,rgba(218,177,83,.11),transparent 42%),linear-gradient(180deg,rgba(3,2,1,.82),rgba(3,2,1,.3) 45%,rgba(3,2,1,.9));z-index:1;pointer-events:none;}
+    .real-java-stage{position:absolute;inset:0;z-index:0;overflow:hidden;background:#050403;}
+    .real-java-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;filter:brightness(.2) saturate(.7) sepia(.12) contrast(1.08);transform:scale(1.08);}
+    .real-java-joglo{animation:realJoglo 12s ease both;}
+    .real-java-wayang{object-position:center 42%;mix-blend-mode:screen;filter:brightness(.62) saturate(.7) sepia(.3) contrast(1.18);animation:realWayang 12s ease both;}
+    .real-java-gunungan{object-position:center 50%;mix-blend-mode:screen;filter:brightness(.72) saturate(.75) sepia(.28) contrast(1.2);animation:realGunungan 12s ease both;}
+    .real-java-vignette{position:absolute;inset:-2%;z-index:3;pointer-events:none;background:radial-gradient(ellipse at center,transparent 35%,rgba(0,0,0,.28) 62%,rgba(0,0,0,.84) 100%);}
+    .real-java-light{position:absolute;z-index:4;width:42vw;height:42vw;left:50%;top:45%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,214,128,.28) 0,rgba(208,157,69,.1) 27%,transparent 68%);filter:blur(12px);opacity:0;animation:realLight 12s ease both;pointer-events:none;}
+    .real-java-frame{position:absolute;inset:22px;z-index:5;border:1px solid rgba(214,175,83,.28);box-shadow:inset 0 0 60px rgba(0,0,0,.55);opacity:0;animation:realFrame 12s ease both;pointer-events:none;}
+    .real-java-content{position:relative;z-index:10;width:min(92vw,700px);height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:#f8ecd0;}
+    .real-java-copy{display:flex;flex-direction:column;align-items:center;gap:12px;transform:translateY(16px);}
+    .real-java-kicker{font-family:'Cinzel',serif;font-size:clamp(.62rem,1.7vw,.78rem);letter-spacing:.42em;text-transform:uppercase;color:rgba(239,211,158,.9);opacity:0;animation:realKicker 12s ease both;}
+    .real-java-monogram{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,7vw,4rem);font-weight:500;line-height:1;color:#e4bd69;opacity:0;animation:realMono 12s ease both;}
+    .real-java-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3.3rem,12vw,7.5rem);font-weight:500;line-height:.86;margin:0;letter-spacing:-.035em;text-shadow:0 8px 35px rgba(0,0,0,.72);opacity:0;animation:realTitle 12s ease both;}
+    .real-java-title span{display:block;font-family:'Great Vibes',cursive;font-size:.42em;line-height:1;color:#dcb36a;margin:.13em 0;}
+    .real-java-date{font-family:'Cinzel',serif;font-size:clamp(.65rem,1.8vw,.86rem);letter-spacing:.25em;text-transform:uppercase;color:#e8d3aa;opacity:0;animation:realDate 12s ease both;}
+    .real-java-button{margin-top:18px;opacity:0;pointer-events:none;animation:realButton 12s ease both;}
+    .real-java-button .btn{min-width:220px;color:#241707!important;background:linear-gradient(135deg,#f8e4ad,#d6a94f 55%,#f3d58d)!important;border:1px solid rgba(255,239,190,.95);box-shadow:0 12px 35px rgba(0,0,0,.55),0 0 32px rgba(232,188,91,.28);text-shadow:none;font-weight:700;backdrop-filter:blur(12px);}
+    .real-java-button .btn:hover{background:linear-gradient(135deg,#fff0bf,#e3b95f 55%,#ffe3a0)!important;transform:translateY(-2px);box-shadow:0 16px 42px rgba(0,0,0,.58),0 0 42px rgba(232,188,91,.38);}
+    .real-java-button .btn span{color:#6f4b16!important;}
+    .real-java-credit{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:11;width:90%;font:500 8px/1.45 'Plus Jakarta Sans',sans-serif;letter-spacing:.06em;color:rgba(255,241,212,.48);opacity:0;animation:realCredit 12s ease both;}
+    @keyframes realJoglo{0%,100%{opacity:0;transform:scale(1.08)}8%{opacity:.16}22%{opacity:.55}42%{opacity:.72}58%{opacity:.25}75%,100%{opacity:0;transform:scale(1.015)}}
+    @keyframes realWayang{0%,12%{opacity:0;transform:translateX(-18%) scale(1.12)}24%{opacity:0}35%{opacity:.55;transform:translateX(-4%) scale(1.06)}50%{opacity:.82;transform:translateX(0) scale(1.03)}68%{opacity:.58;transform:translateX(0) scale(1.01)}82%,100%{opacity:0;transform:translateX(2%) scale(1)}}
+    @keyframes realGunungan{0%,30%{opacity:0;transform:scale(.82) translateY(4%)}43%{opacity:.1}54%{opacity:.58;transform:scale(.96) translateY(0)}65%{opacity:.78;transform:scale(1) translateY(0)}80%{opacity:.46}92%,100%{opacity:0;transform:scale(1.06)}}
+    @keyframes realLight{0%,18%{opacity:0;transform:translate(-50%,-50%) scale(.55)}35%{opacity:.18}55%{opacity:.8;transform:translate(-50%,-50%) scale(1)}75%{opacity:.48}100%{opacity:0;transform:translate(-50%,-50%) scale(1.3)}}
+    @keyframes realFrame{0%,18%{opacity:0}38%,85%{opacity:1}100%{opacity:0}}
+    @keyframes realKicker{0%,55%{opacity:0;transform:translateY(10px)}64%,82%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+    @keyframes realMono{0%,58%{opacity:0;transform:scale(.8)}67%,83%{opacity:1;transform:scale(1)}100%{opacity:0}}
+    @keyframes realTitle{0%,63%{opacity:0;transform:translateY(24px) scale(.96);filter:blur(8px)}72%,87%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}100%{opacity:0;transform:translateY(-8px) scale(1.02)}}
+    @keyframes realDate{0%,69%{opacity:0;transform:translateY(10px)}77%,88%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+    @keyframes realButton{0%,78%{opacity:0;transform:translateY(12px)}84%,100%{opacity:1;transform:translateY(0);pointer-events:auto}}
+    @keyframes realCredit{0%,80%{opacity:0}88%,100%{opacity:.8}}
+    @media (max-width:600px){.real-java-frame{inset:14px}.real-java-photo{object-position:center}.real-java-joglo{object-position:center 45%}.real-java-wayang{object-position:center 45%;transform-origin:center}.real-java-gunungan{object-position:center}.real-java-credit{font-size:7px;bottom:10px}.real-java-copy{gap:9px}}
+    @media (prefers-reduced-motion:reduce){.real-java-photo,.real-java-light,.real-java-frame,.real-java-kicker,.real-java-monogram,.real-java-title,.real-java-date,.real-java-button,.real-java-credit{animation:none!important}.real-java-joglo{opacity:.55}.real-java-wayang{opacity:.35}.real-java-gunungan{opacity:.25}.real-java-title,.real-java-kicker,.real-java-monogram,.real-java-date,.real-java-button{opacity:1}.real-java-button{pointer-events:auto}}
+
+
+/* Typography spacing refinement: keep the opening hierarchy clearly separated */
+.real-java-kicker {
+  top: 10% !important;
+  transform: translateY(-10px) !important;
+  z-index: 8 !important;
+}
+.real-java-monogram {
+  top: 22% !important;
+  transform: translateY(-10px) !important;
+  z-index: 8 !important;
+}
+.real-java-title {
+  top: 54% !important;
+  transform: translateY(0) !important;
+  z-index: 9 !important;
+}
+.real-java-date {
+  top: 64% !important;
+  z-index: 8 !important;
+}
+
+/* Refine monogram: smaller K & P for a more elegant hierarchy */
+.real-java-monogram{
+  font-size:clamp(22px,5vw,42px)!important;
+  letter-spacing:.24em!important;
+}
+</style>
 </head>
 <body class="locked">
   <div class="grain"></div>
 
-  <!-- COVER / OPENING -->
-  <section id="opening" class="opening" aria-label="Halaman pembuka undangan">
-    <div class="opening__bg-glow"></div>
-    
-    <div class="opening__inner">
-      <p class="eyebrow">PAHARGYAN PAWIWAHAN · THE WEDDING OF</p>
-      <div class="wayang-symbol">
-        <img src="assets/fotobebas2.jpeg" alt="Mempelai Utama" class="opening__portrait-img" onerror="this.src='Mempelai-kevin-dan-eka.jpeg'">
-      </div>
-      <h1 class="main-title">Kevin <small>&amp;</small> Putri</h1>
-      <p class="opening__date">Sabtu, 03 Oktober 2026</p>
+  <!-- COVER / OPENING — REAL JAVA CINEMATIC 12s -->
+  <audio id="openingGamelan" preload="auto" src="assets/openingawal.mp3"></audio>
 
-      <div class="guest-card">
-        <span class="guest-card__sub">Katur Mbelani Dhumateng:</span>
-        <span class="guest-card__label">Kepada Yth. Bapak/Ibu/Saudara/i</span>
-        <strong id="guestName" class="guest-card__name">Para Tamu Undangan</strong>
-      </div>
-
-      <button id="openInvitation" class="btn btn--gold btn--large">
-        <span>✦</span> Buka Undangan
-      </button>
-      <p class="opening__hint">Sila ketuk tombol kagem mbukak undangan</p>
+  <section id="opening" class="opening real-java-opening" aria-label="Halaman pembuka undangan">
+    <div class="real-java-stage" aria-hidden="true">
+      <img class="real-java-photo real-java-joglo" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Joglo%2C_Rumah_Tradisional_Jawa_Tengah.jpg" alt="Fotografi rumah Joglo Jawa Tengah">
+      <img class="real-java-photo real-java-wayang" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wayang_Kulit%2C_Central_Java.jpg" alt="Fotografi wayang kulit Jawa Tengah">
+      <img class="real-java-photo real-java-gunungan" src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Gunungan_Hakekat_%28bayangan%29.jpg" alt="Fotografi gunungan wayang">
+      <div class="real-java-light"></div>
+      <div class="real-java-vignette"></div>
+      <div class="real-java-frame"></div>
     </div>
 
-    <div class="opening__bottom-ornament">❖ ❦ ❖</div>
+    <div class="real-java-content">
+      <div class="real-java-copy">
+        <div class="real-java-kicker">PAHARGYAN PAWIWAHAN · THE WEDDING OF</div>
+        <div class="real-java-monogram">K &amp; P</div>
+        <h1 class="real-java-title">Kevin <span>&amp;</span> Putri</h1>
+        <div class="real-java-date">03 OKTOBER 2026 · JAWA</div>
+        <div class="real-java-button">
+          <button id="openInvitation" class="btn btn--gold btn--large"><span>✦</span> Buka Undangan</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="real-java-credit">Material fotografi: Herusutimbul — Joglo, Rumah Tradisional Jawa Tengah (CC BY-SA 4.0); ASITRAC — Wayang Kulit, Central Java (CC BY-SA 4.0); Badroe Zaman — Gunungan Hakekat (CC BY 2.0). Diadaptasi untuk opening undangan.</div>
   </section>
 
   <!-- TOPBAR NAVIGASI -->
   <header class="topbar" id="topbar">
     <a class="brand" href="#beranda">
       <span>𑁍</span>
-      <span>K &amp; E</span>
+      <span>K &amp; P</span>
     </a>
     <nav class="desktop-nav">
       <a href="#beranda">Beranda</a>
@@ -936,8 +1002,8 @@
     document.addEventListener('DOMContentLoaded', () => {
       const config = {
         groomName: "Kevin Reinaldy",
-        brideName: "Eka Putri Astuti",
-        weddingDate: "2026-10-01T09:00:00+07:00",
+        brideName: "Putri",
+        weddingDate: "2026-10-03T09:00:00+07:00",
         phoneWhatsApp: "6287816539401"
       };
 
@@ -966,6 +1032,36 @@
       bgm.loop = true;
       let isPlaying = false;
 
+      // MUSIK OPENING TERPISAH — dibuat tahan terhadap blokir autoplay browser
+      const openingGamelan = document.getElementById('openingGamelan');
+      let openingMusicStarted = false;
+      if (openingGamelan) {
+        openingGamelan.loop = true;
+        openingGamelan.volume = 0.82;
+        openingGamelan.preload = 'auto';
+
+        const startOpeningGamelan = () => {
+          if (openingMusicStarted || openingSection.classList.contains('is-hidden')) return;
+          const promise = openingGamelan.play();
+          if (promise && typeof promise.then === 'function') {
+            promise.then(() => {
+              openingMusicStarted = true;
+            }).catch((err) => {
+              // Chrome/Edge/Firefox dapat menolak autoplay sebelum interaksi pengguna.
+              // Listener interaksi di bawah akan mencoba kembali.
+              console.debug('Opening gamelan menunggu interaksi pengguna:', err);
+            });
+          }
+        };
+
+        // Coba autoplay saat halaman siap. Jika diblokir, suara akan aktif pada
+        // sentuhan/klik pertama tanpa perlu mengubah musik utama.
+        startOpeningGamelan();
+        ['pointerdown', 'touchstart', 'keydown'].forEach((eventName) => {
+          window.addEventListener(eventName, startOpeningGamelan, { passive: true });
+        });
+      }
+
       function toggleAudio() {
         if (isPlaying) {
           bgm.pause();
@@ -984,10 +1080,26 @@
       }
 
       openBtn.addEventListener('click', () => {
+        // Hentikan dan reset musik opening terlebih dahulu.
+        if (openingGamelan) {
+          openingGamelan.pause();
+          openingGamelan.currentTime = 0;
+          openingMusicStarted = false;
+        }
+
         openingSection.classList.add('is-hidden');
         body.classList.remove('locked');
         topbar.classList.add('is-visible');
-        toggleAudio();
+
+        // Mulai musik utama secara eksplisit dari klik pengguna, sehingga tidak
+        // terkena blokir autoplay dan tidak pernah berjalan bersamaan dengan gamelan.
+        bgm.play().then(() => {
+          isPlaying = true;
+          musicBtn.classList.add('is-playing');
+          musicBtn.querySelector('.music-text').textContent = 'Musik: On';
+        }).catch(err => {
+          console.log('Audio musik utama diblokir browser:', err);
+        });
       });
 
       musicBtn.addEventListener('click', toggleAudio);
@@ -1027,10 +1139,21 @@
           const count = document.getElementById('rsvpCount').value;
           const message = document.getElementById('rsvpMessage').value;
 
-          const waMessage = `Halo Kevin & Eka,%0A%0ASaya ingin mengonfirmasi kehadiran acara pernikahan kalian:%0A%0A- *Nama*: ${encodeURIComponent(name)}%0A- *Status Kehadiran*: ${attendance}%0A- *Jumlah Tamu*: ${count} Orang%0A- *Pesan/Doa*: ${encodeURIComponent(message)}%0A%0AMatur Nuwun!`;
-          
-          const waUrl = `https://wa.me/${config.phoneWhatsApp}?text=${waMessage}`;
-          window.open(waUrl, '_blank');
+          const waText = `Assalamu'alaikum Kevin & Putri,
+
+Saya ingin mengonfirmasi kehadiran pada acara pernikahan kalian.
+
+Nama: ${name}
+Status Kehadiran: ${attendance}
+Jumlah Tamu: ${count} orang
+Pesan/Doa: ${message || '-'}
+
+Matur Nuwun!`;
+
+          // Membuka WhatsApp dengan pesan RSVP yang sudah terisi.
+          // Nomor tujuan diambil dari config.phoneWhatsApp.
+          const waUrl = `https://wa.me/${config.phoneWhatsApp}?text=${encodeURIComponent(waText)}`;
+          window.location.href = waUrl;
         });
       }
 
@@ -1040,11 +1163,11 @@
 
       const defaultWishes = [
         { name: "Bapak Robert & Keluarga", text: "Selamat kagem temanten kekalih, sugeng ambal warsa ing katresnan. Mugi-mugi tansah pinaringan berkah lan kabagyan." },
-        { name: "Siti Komala & Rekan", text: "Selamat Kevin dan Eka! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Aamiin YRA." }
+        { name: "Siti Komala & Rekan", text: "Selamat Kevin dan Putri! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Aamiin YRA." }
       ];
 
       function getWishes() {
-        const saved = localStorage.getItem('kevin_eka_wishes');
+        const saved = localStorage.getItem('kevin_putri_wishes');
         return saved ? JSON.parse(saved) : defaultWishes;
       }
 
@@ -1073,7 +1196,7 @@
           if (nameInput.value.trim() && textInput.value.trim()) {
             const wishes = getWishes();
             wishes.unshift({ name: nameInput.value.trim(), text: textInput.value.trim() });
-            localStorage.setItem('kevin_eka_wishes', JSON.stringify(wishes));
+            localStorage.setItem('kevin_putri_wishes', JSON.stringify(wishes));
             
             nameInput.value = '';
             textInput.value = '';
